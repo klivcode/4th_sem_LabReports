@@ -40,6 +40,8 @@ class TrafficLightAgent:
         else:
             return "Yellow Light Get Ready"
 
+
+
 #case 2 : Smart Light Authorization
 
 class RoomEnvironment:
@@ -65,6 +67,19 @@ class RoomEnvironment:
         else:
             print("Action: No changes")
 
+class SmartLightAgent:
+    def decide(self,presence,time_of_day,current_light):
+        if presence=="True" and time_of_day=="Night":
+            return "TurnOn"
+        elif presence=="False" and time_of_day=="Day":
+            return "TurnOff"
+        else:
+            return "No changes"
+
+
+
+
+
 #simulation 
 
 def simulate_traffic_light_agent(step=5):
@@ -85,6 +100,9 @@ def simulate_traffic_light_agent(step=5):
 
 def simulate_smart_light_agent(step=5):
     print("\n----- Smart Light Agent Simulation -----")
+    env=RoomEnvironment()
+    agent=SmartLightAgent()
+    
     
 
 
