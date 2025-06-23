@@ -103,6 +103,14 @@ def simulate_smart_light_agent(step=5):
     env=RoomEnvironment()
     agent=SmartLightAgent()
     
+    for step in range(step):
+        print(f"\n [Step: {step+1}]")
+        env.update_environment()
+        percepts=env.get_percept()
+        print(f"Percept: Presence {percepts[0]}, Time of Day {percepts[1]}, Light {percepts[2]}")
+        action=agent.decide(*percepts)
+        env.execute_action(action)
+
     
 
 
