@@ -1,4 +1,11 @@
-# Lab1
+'''
+Lab 1 (Python): Reflex-based Intelligent Agent
+Objective:
+To design and implement reflex-based intelligent agents that make real-time decisions based on percepts from dynamic environments, such as traffic flow and presence detection.
+To simulate environment-agent interaction using Python, demonstrating how agents can control systems like traffic signals and smart home lighting based on simple condition action rules.
+
+'''
+
 import random
 import time
 #case 1
