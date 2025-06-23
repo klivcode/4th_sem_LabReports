@@ -98,11 +98,12 @@ def simulate_traffic_light_agent(step=5):
       time.sleep(1)
     print("\n----- Traffic Light Agent Simulation Ended -----")
 
+
 def simulate_smart_light_agent(step=5):
     print("\n----- Smart Light Agent Simulation -----")
     env=RoomEnvironment()
     agent=SmartLightAgent()
-    
+
     for step in range(step):
         print(f"\n [Step: {step+1}]")
         env.update_environment()
@@ -110,9 +111,15 @@ def simulate_smart_light_agent(step=5):
         print(f"Percept: Presence {percepts[0]}, Time of Day {percepts[1]}, Light {percepts[2]}")
         action=agent.decide(*percepts)
         env.execute_action(action)
+        time.sleep(1)
 
     
+# run both simulations
 
+if __name__=="__main__":
+    simulate_smart_light_agent(step=5)
+    simulate_traffic_light_agent(step=5)
+   
 
 
 
