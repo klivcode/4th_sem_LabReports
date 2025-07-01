@@ -1,7 +1,7 @@
 '''
-Lab 2 (Python): DFS and BFS Search Algorithms
+Lab 2 (Python): BFS Search Algorithms
 Objective:
-To implement Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms in Python.
+To implement Breadth-First Search (BFS) algorithms in Python.
 To explore the differences between DFS and BFS in terms of their approach to searching and traversing data structures.
 To apply these algorithms to solve problems such as pathfinding in mazes and graph traversal.
 
