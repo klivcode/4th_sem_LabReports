@@ -5,6 +5,21 @@ To implement Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms 
 To explore the differences between DFS and BFS in terms of their approach to searching and traversing data structures.
 To apply these algorithms to solve problems such as pathfinding in mazes and graph traversal.
 
+
+
+
+A
+├── B
+│   ├── D
+│   │   ├── H
+│   │   └── K
+│   └── E
+├── C
+│   ├── F
+│   │   └── J
+│   └── G
+
+
 '''
 
 # Define the tree using nested dictionaries
@@ -52,12 +67,12 @@ def dfs(graph, start, goal):
         
         if node == goal:
             print(f"\nGoal node '{goal}' found after {step} steps.")
+            break
          
          # backtrack if node is not the goal
         for child in reversed(graph[node]):
             if child not in visited:
                 stack.append(child)
-
 
 # set the start and goal nodes
 start_node = 'A'
@@ -65,3 +80,5 @@ goal_node = 'K'
 
 # Run DFS
 dfs(graph, start_node, goal_node)
+
+
