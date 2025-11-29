@@ -3,7 +3,7 @@
 % OBJECTIVE:
 % To solve Cryptoartithmetic problem SEND + MORE = MONEY using constraint logic programming in prolog
 
-%:- use_module(library(clpfd)).
+:- use_module(library(clpfd)).
 
 solve_compact([S,E,N,D,M,O,R,Y]) :-
     Vars = [S,E,N,D,M,O,R,Y],
